@@ -7,11 +7,18 @@
 
 // User created libraries
 #include "game.h"
+#include "ItemList.cpp"
 
 using namespace std;
 
 int main() {
     Game game; // Create game object
+    ItemList itemList;
+    // Load items from the JSON file
+    itemList.loadFromJson("items.json");
+
+    // Display loaded items
+    itemList.listItems();
 
     game.mainMenu(); // Load initial main menu
     game.displayOutput(); // Displays the initial output
