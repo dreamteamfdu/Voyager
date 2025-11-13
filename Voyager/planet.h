@@ -71,6 +71,7 @@ public:
     // Plants ToDo: add method definitions to create the flora on a planet & to display the flora on a planet
     void populatePlantsOnPlanet();
     std::string listPlantsOnPlanet();
+    int getNumberOfPlantsOnPlanet();   // for testing - returns the # of plants found on the planet
 };
 
 // PlanetSysterm will handle displaying and navigating planets

@@ -118,6 +118,12 @@ std::string Planet::listPlantsOnPlanet() {
     return ss.str();
 }
 
+// for testing - returns the # of plants found on the planet
+int Planet::getNumberOfPlantsOnPlanet() {
+    return plantsOnPlanet_.size();
+}
+
+
 Planet PlanetGenerator::generatePlanet(
     int index, const vector<array<double, 3>>& existingCoords) {
     uniform_real_distribution<double> distAU(0.5, 10.0);
